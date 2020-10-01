@@ -1,0 +1,9 @@
+.info {
+  font-size: 20px;
+}
+
+@media (max-width: 400px) {
+  .info {
+    font-size: 12px;
+  }
+}
