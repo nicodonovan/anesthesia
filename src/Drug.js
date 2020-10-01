@@ -2,7 +2,10 @@ import React from "react";
 import { Accordion, Card } from "react-bootstrap";
 
 function Drug(props) {
-  const range = `${props.range[0]} - ${props.range[1]}`;
+  const range =
+    props.range[0] === 0
+      ? `${props.range[1]}`
+      : `${props.range[0]} - ${props.range[1]}`;
 
   const answers = props.range.map((x) => x * props.weight);
 
@@ -10,7 +13,10 @@ function Drug(props) {
     x >= 1000 ? x.toPrecision(4) : x.toPrecision(3)
   );
 
-  const answersRange = `${adjustedAnswers[0]} - ${adjustedAnswers[1]}`;
+  const answersRange =
+    adjustedAnswers[0] > 0
+      ? `${adjustedAnswers[0]} - ${adjustedAnswers[1]}`
+      : `${adjustedAnswers[1]}`;
 
   return (
     <div className="container">

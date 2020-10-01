@@ -26,7 +26,7 @@ function Fluids(props) {
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              Fluids (Initial Bolus): <strong>{props.weight * 10} ml</strong>
+              Initial Bolus: <strong>{props.weight * 10} ml</strong>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>10 ml/kg</Card.Body>
@@ -38,7 +38,7 @@ function Fluids(props) {
         <Accordion>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0">
-              Fluids (4-2-1): <strong>{totalFluids} ml/hr</strong>
+              Maintenance: <strong>{totalFluids} ml/hr</strong>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body>

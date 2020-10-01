@@ -24,13 +24,13 @@ function Airway(props) {
         ETsize = "3.5c/4u";
         ETdepth = "13cm";
         LMA = "1.5";
-        blade = "Wis 1.5";
+        blade = "Mac 0";
         break;
       case "4":
         ETsize = "4-4.5c";
         ETdepth = "14cm";
         LMA = "2";
-        blade = "Wis 1.5";
+        blade = "Mac 1";
         break;
       case "5":
         ETsize = "4.5c";

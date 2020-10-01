@@ -1,9 +1,16 @@
 .info {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-@media (max-width: 400px) {
+.h5 {
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
   .info {
     font-size: 12px;
+  }
+  .h5 {
+    margin-bottom: 5px;
   }
 }

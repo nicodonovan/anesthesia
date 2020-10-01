@@ -34,10 +34,10 @@ function App() {
       <div className="jumbotron">
         <h1 className="display-4">Peds Anesthesia</h1>
         <p className="lead">
-          A simple tool built for the the UCSD Anesthesia Residents
+          A simple tool built for the UCSD Anesthesia Residents
         </p>
         <hr className="my-4"></hr>
-        <p>version 1.0</p>
+        <p>version 1.1</p>
       </div>
       <div className="row">
         <div className="col">
