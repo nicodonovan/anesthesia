@@ -37,7 +37,7 @@ function App() {
           A simple tool built for the UCSD Anesthesia Residents
         </p>
         <hr className="my-4"></hr>
-        <p>version 1.1</p>
+        <p>version 1.1.1</p>
       </div>
       <div className="row">
         <div className="col">
@@ -90,10 +90,15 @@ function App() {
           >
             Reset
           </button>
+          <div className={ready ? "NameH" : "NameS"}>
+            <p>&copy;{new Date().getFullYear()} Nico Donovan</p>
+          </div>
         </div>
       </div>
 
-      <div>{ready ? <Info age={age} weight={weight} /> : null}</div>
+      <div className={ready ? "show" : "hide"}>
+        <Info age={age} weight={weight} />
+      </div>
       <Footer />
     </div>
   );

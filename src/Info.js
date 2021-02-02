@@ -34,12 +34,17 @@ function Info(props) {
       <Succinylcholine age={props.age} weight={props.weight} />
       <p class="h5">Pain</p>
       <DrugMcg name="Fentanyl (IV)" weight={props.weight} range={[0.5, 1]} />
-      <Drug name="Tylenol" weight={props.weight} range={[10, 15]} />
-      <Drug
-        name="Toradol (Ketorolac)"
+      <Drug name="Tylenol" weight={props.weight} range={[0, 10]} />
+      <Drug name="Toradol (Ketorolac)" weight={props.weight} range={[0, 0.5]} />
+      <DrugMcg
+        name="Dexmetatomidine (bolus)"
         weight={props.weight}
-        range={[0.5, 1]}
-        more="then 0.5 mg/kg q6h"
+        range={[0.25, 1]}
+      />
+      <DrugMcg
+        name="Hydromorphone (IV)"
+        weight={props.weight}
+        range={[5, 10]}
       />
       <p class="h5">Antibiotics</p>
       <Drug

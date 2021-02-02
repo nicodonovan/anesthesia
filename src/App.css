@@ -1,11 +1,32 @@
-body {
+.container {
   padding: 5%;
 }
 
 .main-buttons {
-  margin: 1em;
+  margin: 1em 1em 2em 1em;
 }
 
-.button-group {
-  margin-bottom: 35px;
+.NameS {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 500ms ease-in 0, opacity 300ms;
+}
+
+.NameH {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s ease-in 300ms, opacity 300ms;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 500ms ease-in 0, opacity 300ms;
+  transform: translateY(-50px);
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s ease-in 300ms, opacity 0;
 }
